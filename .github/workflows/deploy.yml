@@ -23,7 +23,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages 🚀
-        uses: Emreceyhnn/github-pages-deploy-action@v4
+        uses: Emreceyhnn/green-harvest
         with:
           branch: gh-pages
           folder: dist
