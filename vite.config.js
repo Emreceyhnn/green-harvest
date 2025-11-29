@@ -13,6 +13,7 @@ export default defineConfig(({ command }) => {
     root: "src",
     build: {
       minify: "esbuild",
+      cssMinify: true,
       terserOptions: {
         compress: {
           drop_console: true,
