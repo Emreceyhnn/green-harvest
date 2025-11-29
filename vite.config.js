@@ -12,6 +12,13 @@ export default defineConfig(({ command }) => {
     base: "/green-harvest/",
     root: "src",
     build: {
+      minify: "terser",
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+        },
+      },
       sourcemap: true,
       rollupOptions: {
         input: glob.sync("./src/*.html"),
