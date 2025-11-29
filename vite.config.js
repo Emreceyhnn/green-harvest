@@ -12,7 +12,7 @@ export default defineConfig(({ command }) => {
     base: "/green-harvest/",
     root: "src",
     build: {
-      minify: "terser",
+      minify: "esbuild",
       terserOptions: {
         compress: {
           drop_console: true,
